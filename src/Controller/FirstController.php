@@ -11,6 +11,7 @@ class FirstController extends AbstractController
     #[Route('/first', name: 'app_first')]
     public function index(): Response
     {
+        die('je suis la requete /first ');
         return $this->render('first/index.html.twig', [
             'controller_name' => 'FirstController',
         ]);
